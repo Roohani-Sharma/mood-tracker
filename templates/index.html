@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- Updated Script Paths -->
+  <script defer src="/static/script.js"></script>  <!-- Ensure this path is correct -->
+  <script defer src="/static/moodTracker.js"></script>  <!-- Correct path to moodTracker.js -->
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans flex flex-col items-center justify-center min-h-screen">
+
+  <h1 class="text-4xl font-bold mb-6">Mood Tracker</h1>
+
+  <!-- Mood Buttons -->
+  <div class="mood-buttons flex justify-center space-x-4 mb-6">
+    <button id="happy" class="mood-btn bg-green-500 text-white p-4 rounded-lg hover:bg-green-600">Happy</button>
+    <button id="meh" class="mood-btn bg-yellow-500 text-white p-4 rounded-lg hover:bg-yellow-600">Meh</button>
+    <button id="sad" class="mood-btn bg-red-500 text-white p-4 rounded-lg hover:bg-red-600">Sad</button>
+  </div>
+
+  <!-- Affirmation Message -->
+  <div id="affirmation" class="mt-4 text-center text-lg font-semibold text-gray-700"></div>
+
+  <!-- Mood Summary (Counts) -->
+  <div id="mood-summary" class="mt-4 text-center font-semibold text-xl"></div>
+  
+</body>
+</html>
